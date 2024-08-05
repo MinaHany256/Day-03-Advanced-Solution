@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace Assignment_Part_02
 {
@@ -44,16 +45,17 @@ namespace Assignment_Part_02
 
         #region 3. You have a hashtable , the  user will enter targetValue find all keys that associated with a specific targetValue Note: if the targetValue not found print(“Key not found”)
 
-        //public static Queue FindTargetValue (Dictionary<string,string> dictionary, string TargetValue)
+        //public static Queue FindTargetValue(Dictionary<string, string> dictionary, string TargetValue)
         //{
-        //    Queue queue = new Queue ();
+        //    Queue queue = new Queue();
         //    foreach (var item in dictionary)
         //    {
-        //        if(TargetValue.Equals(item.Value))
+        //        if (TargetValue.Equals(item.Value))
         //        {
-        //            queue.Enqueue (item.Key);
+        //            queue.Enqueue(item.Key);
         //        }
         //    }
+            
         //    return queue;
         //}
 
@@ -100,6 +102,9 @@ namespace Assignment_Part_02
             //Console.Write("Enter a Target Value : ");
             //string TargetValue = Console.ReadLine();
             //Queue ResultQueue = FindTargetValue(dictionary, TargetValue);
+
+            //if (ResultQueue.Count == 0)
+            //    Console.WriteLine("Key Not Found");
 
             //foreach (var item in ResultQueue)
             //    Console.WriteLine(item);
