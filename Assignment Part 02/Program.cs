@@ -42,6 +42,24 @@ namespace Assignment_Part_02
 
         #endregion
 
+        #region 3. You have a hashtable , the  user will enter targetValue find all keys that associated with a specific targetValue Note: if the targetValue not found print(“Key not found”)
+
+        //public static Queue FindTargetValue (Dictionary<string,string> dictionary, string TargetValue)
+        //{
+        //    Queue queue = new Queue ();
+        //    foreach (var item in dictionary)
+        //    {
+        //        if(TargetValue.Equals(item.Value))
+        //        {
+        //            queue.Enqueue (item.Key);
+        //        }
+        //    }
+        //    return queue;
+        //}
+
+        #endregion
+
+
         static void Main(string[] args)
         {
             #region 1. Given an array of integers, count the frequency of each element using a hash table.
@@ -69,7 +87,26 @@ namespace Assignment_Part_02
 
             #endregion
 
-           
+            #region 3. You have a hashtable , the  user will enter targetValue find all keys that associated with a specific targetValue Note: if the targetValue not found print(“Key not found”)
+
+            //Dictionary<string, string> dictionary = new Dictionary<string, string>()
+            //{
+            //    { "key1", "apple" },
+            //    { "key2", "banana"},
+            //    { "key3", "apple" }
+
+            //};
+
+            //Console.Write("Enter a Target Value : ");
+            //string TargetValue = Console.ReadLine();
+            //Queue ResultQueue = FindTargetValue(dictionary, TargetValue);
+
+            //foreach (var item in ResultQueue)
+            //    Console.WriteLine(item);
+
+            #endregion
+
+
 
         }
     }
