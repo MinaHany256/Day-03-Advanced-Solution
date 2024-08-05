@@ -51,7 +51,7 @@ namespace Demo
         {
             if (other is null) return 1;
 
-            return this.Salary.CompareTo(other.Salary);
+            return this.Id.CompareTo(other.Id);
         }
 
     }

@@ -2,6 +2,14 @@
 
 namespace Demo
 {
+    class StringDescCOmaprer : IComparer<string>
+    {
+        public int Compare(string? x, string? y)
+        {
+            return - x?.CompareTo(y) ??  (y is null ? 0 : -1) ;
+        }
+    }
+
     class StringEqualityComaprer : IEqualityComparer<string>
     {
         public bool Equals(string? x, string? y)
@@ -17,8 +25,6 @@ namespace Demo
             return other.ToLower().GetHashCode();
         }
     }
-
-
     class Employee01
     {
         public int Id { get; set; }
@@ -186,6 +192,38 @@ namespace Demo
 
 
             #endregion
+
+            #region Generic Collections - SortedDictionary [ Binary Search Tree ]
+
+            #region Example 01
+            //SortedDictionary<string, int> SortedNote = new SortedDictionary<string, int>(new StringDescCOmaprer());
+
+            //SortedNote.Add("Eyad", 888);
+            //SortedNote.Add("Omar", 111);
+            //SortedNote.Add("Ziad", 999);
+            //SortedNote.Add("Mona", 222);
+
+            //foreach (var note in SortedNote) 
+            //    Console.WriteLine($"{note.Key} ::: {note.Value}"); 
+            #endregion
+
+            #region Example 02
+            //SortedDictionary<Employee, string> SortedEmployees = new SortedDictionary<Employee, string>() 
+            //{
+            //     { new Employee (20,"Ahmed",8000) , "Employee with Id: 20, Name: Ahmed" },
+            //     { new Employee (30,"Omars",9000) , "Employee with Id: 30, Name: Omars" }, 
+            //     { new Employee (10,"Menna",3000) , "Employee with Id: 100, Name: Menna" }, 
+            //};
+
+            //foreach (var employee in SortedEmployees)
+            //    Console.WriteLine($"{employee.Key} ");
+
+            #endregion
+
+            #endregion
+
+
+
         }
     }
 }
