@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Demo
 {
@@ -11,7 +12,6 @@ namespace Demo
             //return y.CompareTo(x);
         }
     }
-
     class StringDescCOmaprer : IComparer<string>
     {
         public int Compare(string? x, string? y)
@@ -326,6 +326,36 @@ namespace Demo
             //foreach (int i in Set01)
             //    Console.WriteLine(i); 
             #endregion
+
+            #endregion
+
+            #region Generic Collections - SortedSet [Balanced BST]
+
+            #region Example 01
+            //SortedSet<int> SortedNumbers = new SortedSet<int>()
+            //{
+            //    7,10,1,2,6,8,3,9,4
+            //};
+
+            //foreach (var i in SortedNumbers)
+            //    Console.WriteLine(i); 
+            #endregion
+
+            //SortedSet<Movie> Sortedmovies = new SortedSet<Movie>( new MovieComparer() )
+            //{
+            //   new Movie ( 101, "BLack Adammm", 120),
+            //   new Movie ( 303, "Fatih Sultan", 150),
+            //   new Movie ( 202, "Awlad Rezkkk", 130),
+            //};
+
+            //foreach (var movie in Sortedmovies)
+            //    Console.WriteLine(movie);
+
+            //Movie MinMovie = Sortedmovies.Min!;
+            //Movie MaxMovie = Sortedmovies.Max!;
+
+            //Console.WriteLine(MinMovie);
+            //Console.WriteLine(MaxMovie);
 
             #endregion
 

@@ -7,6 +7,14 @@ using System.Threading.Tasks;
 
 namespace Demo
 {
+    internal class MovieComparer : IComparer<Movie>
+    {
+        public int Compare(Movie? x, Movie? y)
+        {
+            return x?.Title.CompareTo(y?.Title) ?? (y is null ? 0 : -1);
+        }
+    }
+
     internal class MovieEqualityComparer : IEqualityComparer<Movie>
     {
         public bool Equals(Movie? x, Movie? y)
@@ -20,10 +28,10 @@ namespace Demo
         
     }
 
-    internal class Movie : IEquatable<Movie>
+    internal class Movie : IEquatable<Movie> , IComparable<Movie>
     {
         public int Code { get; set; }
-        private string Title { get; set; } = null!;
+        public string Title { get; set; } = null!;
         public decimal Price { get; set; }
 
         public Movie(int Code, string? Title, decimal Price)
@@ -46,6 +54,13 @@ namespace Demo
         {
             if (other == null) return false;
             return this.Code.Equals(other.Code) && this.Title.Equals(other.Title) && this.Price.Equals(other.Price) ;
+        }
+
+        public int CompareTo(Movie? other)
+        {
+            if (other == null) return 1;
+
+           return this.Code.CompareTo(other.Code) ;
         }
     }
 }
