@@ -88,6 +88,25 @@ namespace Assignment_Part_02
 
         #endregion
 
+        #region 5. Given an array of integers, check if the array contains any duplicates.
+
+        //public static int CheckDuplicates(int[] Arr)
+        //{
+        //    HashSet<int> hashset = new HashSet<int>();
+
+        //    int Count = 0;
+        //    foreach (int i in Arr)
+        //    {
+        //        if(hashset.Contains(i))
+        //            Count++;
+        //        else
+        //            hashset.Add(i);
+        //    }
+
+        //    return Count;
+        //}
+
+        #endregion
 
         static void Main(string[] args)
         {
@@ -145,6 +164,16 @@ namespace Assignment_Part_02
             //GroupAnagrams(words);
 
             #endregion
+
+            #region 5. Given an array of integers, check if the array contains any duplicates.
+
+            //int[] numbers = { 1, 2, 3, 4,2, 5, 6 };
+
+            //int Count = CheckDuplicates(numbers);
+            //Console.WriteLine($"Count of Duplicates = {Count} ");
+
+            #endregion
+
 
 
         }
