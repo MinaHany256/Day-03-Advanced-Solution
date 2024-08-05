@@ -2,26 +2,22 @@
 
 namespace Demo
 {
-    class StringEqualityComaprer : IEqualityComparer
+    class StringEqualityComaprer : IEqualityComparer<string>
     {
-        public bool Equals(object? x, object? y)
+        public bool Equals(string? x, string? y)
         {
-            string? strX = x as string;
-            string? strY = y as string;
-
-            return strX?.ToLower().Equals(strY) ?? (strY is null ? true : false);
-
+            return x?.ToLower().Equals(y) ?? (y is null ? true : false);
         }
 
-        public int GetHashCode(object obj)
+        public int GetHashCode(string other)
         {
-            string? other = obj as string;
 
             if (other is null) return 0;
 
             return other.ToLower().GetHashCode();
         }
     }
+
 
     class Employee01
     {
@@ -107,6 +103,86 @@ namespace Demo
             //foreach (DictionaryEntry Person in Note)
             //    Console.WriteLine($"{Person.Key} ::: {Person.Value}");
 
+
+
+            #endregion
+
+            #region Generic Collections - Dictionary [Hashtable]
+
+            #region Example 01
+            //Dictionary<string, int> Note = new Dictionary<string, int>()
+            //{
+            //    {"Ahmed", 123},
+            //    {"Nadia", 456},
+            //    {"Omars", 789},
+            //};
+
+            #region Add & Set
+            //// Unsafe Code
+            //Note.Add("Ahmed", 222);
+
+            //// Add Or Set
+            //Note["Ahmed"] = 222;   // if not found will add , if found will update value
+
+            //// Safe Code (First Way)
+            //if (!Note.ContainsKey("Ahmed"))
+            //    Note.Add("Ahmed", 222);
+
+
+            //// Safe Code (Second Way)
+            //Note.TryAdd("Ahmed", 222); 
+            #endregion
+
+            #region Get
+
+            // Unsafe Code
+            //Console.WriteLine(Note["Ali"]);
+
+            //if(Note.ContainsKey("Ali"))
+            //    Console.WriteLine(Note["Ali"]);
+
+            //Note.TryGetValue("Ahmed", out int value);
+            //Console.WriteLine(value);
+
+
+            #endregion
+
+            #region Go Through All Items
+            //foreach (var person in Note)
+            //    Console.WriteLine($"{person.Key} ::: {person.Value}"); 
+            #endregion
+
+
+            #region Go Through Dictionary Entries
+            // Note.Add("Ahmed", 111); // Invalid: Key Must be Unique
+
+            //Dictionary<string, int> Note02 = new Dictionary<string, int>(Note, new StringEqualityComaprer() );
+            //Note02.Add("ahmed", 555);
+
+            //KeyValuePair<string, int>[] keyValuePairs =
+            //    {
+            //    new KeyValuePair<string, int>("Mona",999),
+            //    new KeyValuePair<string, int>("Alii",222),
+            //    new KeyValuePair<string, int>("Amrr",777),
+            //    };
+
+            //Dictionary<string, int> Note02 = new Dictionary<string, int>(keyValuePairs) 
+            #endregion; 
+            #endregion
+
+
+            #region Example 02
+            //Dictionary<Employee, string> Employees = new Dictionary<Employee, string>()
+            //{
+            //    {new Employee (10,"Ahmed",6000) , "Employee with Id: 10, Name: Ahmed" },
+            //    {new Employee (20,"Nadia",4000) , "Employee with Id: 20, Name: Nadia" },
+            //};
+
+            //Employees.Add(new Employee(10, "Ahmed", 6000), "Employee with Id.......");
+
+            //foreach (var  emp in Employees)
+            //    Console.WriteLine($"{emp.Key}"); 
+            #endregion
 
 
             #endregion
