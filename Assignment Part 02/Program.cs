@@ -292,7 +292,19 @@ namespace Assignment_Part_02
 
             //foreach(DictionaryEntry item in Result)
             //    Console.WriteLine($"{item.Key} ::: {item.Value}");
-            
+
+
+            #endregion
+
+            #region 11. Find the union of two sets, returning the unique elements from both sets.
+
+            //HashSet<int> set01 = new HashSet<int> { 1, 2, 3, 4, 5 };
+            //HashSet<int> set02 = new HashSet<int> {  5, 6, 7, 8, 9 };
+
+            //set01.UnionWith(set02);
+
+            //foreach (int i in set01)
+            //    Console.WriteLine(i);
 
             #endregion
         }
