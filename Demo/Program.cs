@@ -302,6 +302,31 @@ namespace Demo
             //    Console.WriteLine(movie); 
             #endregion
 
+            #region Hashset Methods
+            //HashSet<int> Set01 = new HashSet<int>() { 1, 2, 3, 4, 5 };
+            //HashSet<int> Set02 = new HashSet<int>() { 1, 2, 3, 4, 5, 6};
+
+            //Numbers.TryGetValue(3, out int value);
+            //Console.WriteLine(value);
+
+            //Set02.ExceptWith(Set01);
+            //Set02.SymmetricExceptWith(Set01);
+
+            //Set02.IntersectWith(Set01);
+            //Set02.UnionWith(Set01);
+
+            //Console.WriteLine($"Set01.IsSubsetOf(Set02) : {Set01.IsSubsetOf(Set02)}");
+            //Console.WriteLine($"Set01.IsProperSubsetOf(Set02) : {Set01.IsProperSubsetOf(Set02)}");
+
+            //Console.WriteLine($"Set01.IsSubsetOf(Set02) : {Set02.IsSupersetOf(Set01)}");
+            //Console.WriteLine($"Set01.IsProperSubsetOf(Set02) : {Set02.IsProperSupersetOf(Set01)}");
+
+            //Console.WriteLine(Set01.Overlaps(Set02));
+
+            //foreach (int i in Set01)
+            //    Console.WriteLine(i); 
+            #endregion
+
             #endregion
 
         }
