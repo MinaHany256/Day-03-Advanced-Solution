@@ -267,6 +267,43 @@ namespace Demo
 
             #endregion
 
+            #region Generic Collections - Hashset [Hashtable]
+
+            #region Example 01
+            //HashSet<Employee> Employees = new HashSet<Employee>()
+            //{
+            //    new Employee(10,"Ahmed",6_000),
+            //    new Employee(20,"Omars",2_000),
+            //    new Employee(30,"Amany",8_000),
+            //    new Employee(30,"Amany",8_000),
+            //    new Employee(30,"Amany",8_000),
+            //    new Employee(30,"Amany",8_000)
+            //};
+
+
+            //foreach (var employee in Employees)
+            //    Console.WriteLine(employee); 
+            #endregion
+
+            #region Example 02
+            //HashSet<Movie> movies = new HashSet<Movie>( new MovieEqualityComparer() );
+
+            //movies.Add(new Movie(101, "BLack Adammm", 120));
+            //movies.Add(new Movie(303, "Fatih Sultan", 150));
+            //movies.Add(new Movie(303, "Fatih Sultan", 150));
+            //movies.Add(new Movie(303, "Fatih Sultan", 150));
+            //movies.Add(new Movie(202, "Awlad Rezkkk", 130));
+
+
+            //movies.Add(new Movie(202, "Avatar", 170));
+
+
+            //foreach (var movie in movies)
+            //    Console.WriteLine(movie); 
+            #endregion
+
+            #endregion
+
         }
     }
 }
