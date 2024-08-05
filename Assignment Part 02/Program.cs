@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Assignment_Part_02
@@ -157,6 +158,23 @@ namespace Assignment_Part_02
         //            Greater.Add(element);
         //    }
         //    return Greater;
+        //}
+
+        #endregion
+
+        #region 13. You have a dictionary with string keys, the user will enter targetChar , count how many keys start with this targetChar.
+
+        // public static int NumberOfKeysStartingWithChar (Dictionary<string, int> dictionary, char TargetChar)
+        //{
+        //    int Count = 0;
+        //    string targetString = TargetChar.ToString().ToLower();
+
+        //    foreach (string key in dictionary.Keys)
+        //        if(key.ToLower().StartsWith(targetString))
+        //            Count++;
+
+        //    return Count;
+
         //}
 
         #endregion
@@ -337,6 +355,25 @@ namespace Assignment_Part_02
             //    Console.WriteLine(item);
 
             #endregion
+
+            #region 13. You have a dictionary with string keys, the user will enter targetChar , count how many keys start with this targetChar.
+
+            //Dictionary<string,int> dictionary = new Dictionary<string,int>()
+            //{
+            //    {"apple",1},
+            //    {"animal",2},
+            //    {"airport",3}
+
+            //};
+
+            //Console.Write("Enter a Target Char: ");
+            //char TargetChar = char.Parse(Console.ReadLine());
+
+            //int Count = NumberOfKeysStartingWithChar(dictionary , TargetChar);
+            //Console.WriteLine(Count);
+
+            #endregion
+
 
         }
     }
