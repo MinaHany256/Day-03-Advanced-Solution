@@ -125,6 +125,26 @@ namespace Assignment_Part_02
 
         #endregion
 
+        #region 10. You have a hashtable with unique values, create a new hashtable where the keys and values are swapped. 
+
+        //public static Hashtable Swaping(Hashtable hashtable)
+        //{
+        //    Hashtable Swapped = new Hashtable();
+
+        //    foreach(DictionaryEntry entry in hashtable)
+        //    {
+        //        string key = entry.Key as string;
+        //        object value = entry.Value;
+
+        //        Swapped[value] = key;
+        //    }
+
+        //    return Swapped;
+
+        //}
+
+        #endregion
+
 
         static void Main(string[] args)
         {
@@ -259,7 +279,22 @@ namespace Assignment_Part_02
 
             #endregion
 
+            #region 10. You have a hashtable with unique values, create a new hashtable where the keys and values are swapped.
 
+            //Hashtable hashtable = new Hashtable()
+            //{
+            //    { "ONE"  , 1 },
+            //    { "two"  , 2 },
+            //    { "three", 3 }
+            //};
+
+            //Hashtable Result  = Swaping(hashtable);
+
+            //foreach(DictionaryEntry item in Result)
+            //    Console.WriteLine($"{item.Key} ::: {item.Value}");
+            
+
+            #endregion
         }
     }
 }
