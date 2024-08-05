@@ -108,6 +108,24 @@ namespace Assignment_Part_02
 
         #endregion
 
+        #region  8. Given an array of integers from 1 to N with some numbers missing, find the missing numbers.
+
+        //public static List<int> MissingNumbers(int[] numbers, int N)
+        //{
+        //    HashSet<int> hashSet = new HashSet<int>(numbers);
+        //    List<int> list = new List<int>();
+
+        //    for(int i = 1; i<= N; i++)
+        //    {
+        //        if(!hashSet.Contains(i))
+        //            list.Add(i);
+        //    }
+        //    return list;
+        //}
+
+        #endregion
+
+
         static void Main(string[] args)
         {
             #region 1. Given an array of integers, count the frequency of each element using a hash table.
@@ -218,7 +236,17 @@ namespace Assignment_Part_02
 
             #endregion
 
+            #region 8. Given an array of integers from 1 to N with some numbers missing, find the missing numbers.
 
+            //int[] Numbers = [1, 2, 4, 6, 7, 8, 10];
+            //int N = 10;
+
+            //List<int> ResultList = MissingNumbers(Numbers,10);
+
+            //foreach(int i in ResultList)
+            //    Console.WriteLine(i);
+
+            #endregion
 
         }
     }
