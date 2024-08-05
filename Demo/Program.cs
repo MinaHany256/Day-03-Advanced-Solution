@@ -2,14 +2,23 @@
 
 namespace Demo
 {
+    class IntDescComparer : IComparer<int>
+    {
+        public int Compare(int x, int y)
+        {
+            return y - x;
+            //return - x.CompareTo(y);
+            //return y.CompareTo(x);
+        }
+    }
+
     class StringDescCOmaprer : IComparer<string>
     {
         public int Compare(string? x, string? y)
         {
-            return - x?.CompareTo(y) ??  (y is null ? 0 : -1) ;
+            return -x?.CompareTo(y) ?? (y is null ? 0 : -1);
         }
     }
-
     class StringEqualityComaprer : IEqualityComparer<string>
     {
         public bool Equals(string? x, string? y)
@@ -222,7 +231,41 @@ namespace Demo
 
             #endregion
 
+            #region Generic Collections - SortedList [ Two Arrays ]
 
+            #region Example 01
+            //SortedList<string, int> SortedNote = new SortedList<string, int>()
+            //{
+            //    {"Eyad", 888},
+            //    {"Omar", 111},
+            //    {"Ziad", 999},
+            //    {"Mona", 222},
+            //};
+
+            //Console.WriteLine(SortedNote.GetKeyAtIndex(0));
+            //Console.WriteLine(SortedNote.GetValueAtIndex(0));
+
+            //foreach (var person in SortedNote)
+            //    Console.WriteLine($"{person.Key} ::: {person.Value}"); 
+            #endregion
+
+            #region Example 02
+
+            //SortedList<int, string> SortedNumbers = new SortedList<int, string>(new IntDescComparer ())
+            //{
+            //    {2,"TWO" },
+            //    {1,"ONE" },
+            //    {3,"THR" }
+            //};
+
+            //foreach (var i in SortedNumbers)
+            //    Console.WriteLine($"{i.Key} ::: {i.Value}");
+
+
+            #endregion
+
+
+            #endregion
 
         }
     }
