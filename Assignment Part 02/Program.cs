@@ -185,7 +185,7 @@ namespace Assignment_Part_02
 
             //bool flag;
 
-            
+
             //flag = sortedDictionary.TryAdd(40, "Said");
 
             //if (!flag)
@@ -195,6 +195,26 @@ namespace Assignment_Part_02
 
             //foreach (var item in sortedDictionary)
             //    Console.WriteLine($"{item.Key} ::: {item.Value} ");
+
+            #endregion
+
+            #region 7. Create an employee directory where employee IDs (int) are keys and employee names (string) are values. Use a SortedList to manage and retrieve employees in order of their IDs.
+
+            //SortedList<int,string> sortedList = new SortedList<int,string>();
+
+            //sortedList.Add(105, "Mina");
+            //sortedList.Add(102, "Hany");
+            //sortedList.Add(108, "Foad");
+
+            //sortedList.Remove(105);
+            //foreach (var i in sortedList)
+            //    Console.WriteLine($"{i.Key} ::: {i.Value}");
+
+            //int TargetId = 104;
+            //if(!sortedList.TryGetValue(TargetId, out string value))
+            //    Console.WriteLine($"Employe with Id : {TargetId} not Found ");
+            //else
+            //    Console.WriteLine($"Employe with Id : {TargetId} is {value} ");
 
             #endregion
 
