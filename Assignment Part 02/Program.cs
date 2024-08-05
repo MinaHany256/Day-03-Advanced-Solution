@@ -55,8 +55,35 @@ namespace Assignment_Part_02
         //            queue.Enqueue(item.Key);
         //        }
         //    }
-            
+
         //    return queue;
+        //}
+
+        #endregion
+
+        #region 4. Given an array of strings, group anagrams together.
+
+
+        //public static void GroupAnagrams(string[] strings)
+        //{
+        //    Dictionary<string,string> dictionary = new Dictionary<string,string>();
+
+        //    foreach (var s in strings)
+        //    {
+        //        char[] chars = s.ToCharArray();
+        //        Array.Sort(chars);
+        //        string SortedString = new string(chars);
+
+        //        if(dictionary.ContainsKey(SortedString))
+        //            dictionary[SortedString] += s;
+        //        else
+        //            dictionary[SortedString] = s;
+
+        //    }
+
+        //    foreach (var s in dictionary)
+        //        Console.WriteLine($" {s.Value} ");
+
         //}
 
         #endregion
@@ -111,6 +138,13 @@ namespace Assignment_Part_02
 
             #endregion
 
+            #region 4. Given an array of strings, group anagrams together.
+
+
+            //string[] words = { "eat", "tea", "tan", "ate", "nat", "bat" };
+            //GroupAnagrams(words);
+
+            #endregion
 
 
         }
