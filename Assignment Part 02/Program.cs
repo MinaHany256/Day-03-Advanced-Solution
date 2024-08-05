@@ -145,6 +145,22 @@ namespace Assignment_Part_02
 
         #endregion
 
+        #region 12. You have a sorted set , user will enter an integer target, find all elements that is greater than target and add them in list.
+
+        //public static List<int> FindGreaterElements (SortedSet<int> sortedSet, int Target)
+        //{
+        //    List<int> Greater = new List<int>();
+
+        //    foreach (int element in sortedSet)
+        //    {
+        //        if(element > Target)
+        //            Greater.Add(element);
+        //    }
+        //    return Greater;
+        //}
+
+        #endregion
+
 
         static void Main(string[] args)
         {
@@ -307,6 +323,21 @@ namespace Assignment_Part_02
             //    Console.WriteLine(i);
 
             #endregion
+
+            #region 12. You have a sorted set , user will enter an integer target, find all elements that is greater than target and add them in list.
+
+            //SortedSet<int> sortedSet = new SortedSet<int>() { 1, 2, 3, 4, 5, 6, 7 };
+
+            //Console.WriteLine("Enter a Target: ");
+            //int Target = int.Parse(Console.ReadLine() ?? "0");
+
+            //List<int> ResultList =  FindGreaterElements(sortedSet, Target);
+
+            //foreach(var item in ResultList)
+            //    Console.WriteLine(item);
+
+            #endregion
+
         }
     }
 }
