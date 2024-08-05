@@ -248,6 +248,18 @@ namespace Assignment_Part_02
 
             #endregion
 
+            #region 9. You  have a list of integers with possible duplicates, create a HashSet that contains only unique values.
+
+            //List<int> list = new List<int>() { 1, 2, 3, 4, 5, 4, 5, 2, 6, 1, 2, 8, 9 };
+
+            //HashSet<int> hashSet = new HashSet<int>(list);
+
+            //foreach (var item in hashSet)
+            //    Console.WriteLine(item);
+
+            #endregion
+
+
         }
     }
 }
