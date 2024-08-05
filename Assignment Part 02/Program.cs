@@ -174,6 +174,30 @@ namespace Assignment_Part_02
 
             #endregion
 
+            #region 6. Implement a SortedDictionary that stores student IDs (int) and their names (string). Perform operations like adding, removing, and retrieving student names.
+
+            //SortedDictionary<int,string> sortedDictionary = new SortedDictionary<int,string>()
+            //{
+            //    {30, "Mina" },
+            //    {10, "Hany" },
+            //    {20, "Foad" }
+            //};
+
+            //bool flag;
+
+            
+            //flag = sortedDictionary.TryAdd(40, "Said");
+
+            //if (!flag)
+            //    Console.WriteLine("Item Already in the Dictionary");
+
+            //sortedDictionary.Remove(30);
+
+            //foreach (var item in sortedDictionary)
+            //    Console.WriteLine($"{item.Key} ::: {item.Value} ");
+
+            #endregion
+
 
 
         }
