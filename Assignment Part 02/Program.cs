@@ -194,7 +194,24 @@ namespace Assignment_Part_02
 
         #endregion
 
+        #region 15. You have a sorted list with integer values, find all the keys associated with even values.
 
+
+        //public static List<int> FindEvenValues(SortedList<int,int> sortedList)
+        //{
+        //    List<int> result = new List<int>();
+
+        //    foreach (var item in sortedList)
+        //    {
+        //        if(item.Value % 2 == 0)
+        //            result.Add(item.Key);
+        //    }
+
+        //    return result;
+
+        //}
+
+        #endregion
 
         static void Main(string[] args)
         {
@@ -404,7 +421,24 @@ namespace Assignment_Part_02
 
             #endregion
 
+            #region 15. You have a sorted list with integer values, find all the keys associated with even values.
 
+            //SortedList<int,int> sortedList = new SortedList<int, int>()
+            //{
+            //    { 1,2},
+            //    { 2,3},
+            //    { 3,4},
+            //    { 4,5},
+            //    { 5,6},
+            //};
+
+            //List<int> ResultList =  FindEvenValues(sortedList);
+
+            //Console.WriteLine("The Following Keys Has Even Values : ");
+            //foreach (var i in ResultList) 
+            //    Console.WriteLine(i);
+
+            #endregion
 
         }
     }
